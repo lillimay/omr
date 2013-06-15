@@ -1,3 +1,7 @@
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+
+
 $baseFontFamily: Titillium Web;
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web);
 
@@ -7,6 +11,10 @@ $baseFontFamily: Titillium Web;
 body {
 		padding-top: 60px
 	}
+  .navbar-inner {
+    @include box-shadow(none !important);
+    border: 0;
+  }
 
 .footer {
 		margin-top: 60px;
@@ -14,6 +22,8 @@ body {
 		a{ 
 			color: $gray;
 		}
+
+
 	}
 @import 'bootstrap-responsive';
 
