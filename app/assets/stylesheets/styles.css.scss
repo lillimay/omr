@@ -1,3 +1,63 @@
+$baseFontFamily: Titillium Web;
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
+
 @import 'bootstrap';
 
+body {
+		padding-top: 60px
+	}
+
+.footer {
+		margin-top: 60px;
+		color: $grayLight;
+		a{ 
+			color: $gray;
+		}
+	}
 @import 'bootstrap-responsive';
+
+
+
+
+
+.btn-custom-mkdark.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.btn-custom-mkdark {
+  color: #ffffff;
+  	/* This is the text colour on the button. */
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  	/* This is the text shadow colour on the button. R 0, G 0, B 0, A 0.25 means its black with 2.5% opacity. */
+  background-color: #008deb;
+  background-image: -moz-linear-gradient(top, #0099ff, #007acc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0099ff), to(#007acc));
+  background-image: -webkit-linear-gradient(top, #0099ff, #007acc);
+  background-image: -o-linear-gradient(top, #0099ff, #007acc);
+  background-image: linear-gradient(to bottom, #0099ff, #007acc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0099ff', endColorstr='#ff007acc', GradientType=0);
+  border-color: #007acc #007acc #004c80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #007acc;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-custom-mkdark:hover,
+.btn-custom-mkdark:focus,
+.btn-custom-mkdark:active,
+.btn-custom-mkdark.active,
+.btn-custom-mkdark.disabled,
+.btn-custom-mkdark[disabled] {
+  color: #ffffff;
+  background-color: #007acc;
+  *background-color: #006bb3;
+}
+.btn-custom-mkdark:active,
+.btn-custom-mkdark.active {
+  background-color: #005c99 ;
+}
+
+
+
